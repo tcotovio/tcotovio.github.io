@@ -4,7 +4,7 @@
 <head>
     <script type="text/javascript" src="myMacroCalculator.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             background-color: whitesmoke;
@@ -106,6 +106,21 @@
             background-color: #e6e6e6;
         }
 
+        .questionBtn {
+            text-align: center;
+            font-size: 16px;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        .questionBtn:hover {
+            opacity: 1;
+        }
+
+        .questionBtn:focus {
+            opacity: 1;
+        }
+
         #propsShow {
             text-align: left;
             color: coral;
@@ -183,7 +198,9 @@
     <input id="actBtn" class="form-radio" name="exercise" type="radio" value="Ativas">Active</input>
     <input id="extActBtn" class="form-radio" name="exercise" type="radio" value="Extremamente Ativas">Extremely
     Active </input>
-    <button id="qMark" style="margin-left: 3%;" onclick="showExplanation()">&#xf059;</button>
+    <button id="qMark" class="questionBtn"
+        style="margin-left: 2%; border-radius: 50%; border: 0; background-color: black; color: white;"
+        onclick="showExplanation()"><b>&#63;</b></button>
     <p></p>
     <b>I want to:</b> <input id="loseBtn" class="form-radio" name="shape" type="radio" value="Perder peso"
         checked="checked">Lose Weight</input>
